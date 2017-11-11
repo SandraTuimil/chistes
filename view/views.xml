@@ -2,7 +2,7 @@
 
 <openerp>
 	<data>
-		<!-- FORM VIEW-->
+		<!-- FORM VIEW--> 
         <record id="chiste_form_view" model="ir.ui.view" >
             <field name="name">chiste.form.view</field>
             <field name="model">chiste.chiste</field>
@@ -10,7 +10,8 @@
             <field name="arch" type="xml">
                 <form>
                     <field name="title" />    
-                    <field name="description" />                    
+                    <field name="description" />  
+                    <field name="category_id"/>                  
                 </form>
             </field>
         </record>

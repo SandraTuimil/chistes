@@ -2,12 +2,34 @@
 
 <openerp>
 	<data>
-		<record model="chiste_chiste">
+		<record model="chiste.categoria">
+			<field name='title'>Programación</field>
+			<field name='description'>.. 
+			</field>
+		</record>
+
+		<record model="chiste.categoria">
+			<field name='title'>Jaimito</field>
+			<field name='description'>.. 
+			</field>
+		</record>
+
+
+
+
+		<record model="chiste.chiste">
 			<field name='title'>Comentarios</field>
 			<field name='description'>
-				Está nunha clase de programación un alumno que non da feito e tal... 
-				
+				Un alumno en una clase de programación pide ayuda al profesor al no conseguir ejecutar lo deseado. 
+				El profesor al ver el código le indica: por favor, comenta esta línea. 
+				Entonces el alumno responde: "Te comento, en esta línea estoy llamando a una función que .. bla bla"
+			</field>
+		</record>
 
+		<record model="chiste.chiste">
+			<field name='title'>DEMO2</field>
+			<field name='description'>
+				Chiste demo2
 			</field>
 		</record>
 	</data>

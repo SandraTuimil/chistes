@@ -8,7 +8,10 @@
     """,
     'author': 'Sandra Tuimil Calvo',
     'depends': ['base'],
-    'update_xml': ['view/views.xml'],
+    'update_xml': [
+        'view/views.xml',
+
+    ],
     'demo_xml': ['demo/demo.xml'],
     'installable': True,
     'auto_install': False,
