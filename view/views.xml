@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+	<data>
+		<!-- FORM VIEW-->
+        <record id="chiste_form_view" model="ir.ui.view" >
+            <field name="name">chiste.form.view</field>
+            <field name="model">chiste.chiste</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="title" />    
+                    <field name="description" />                    
+                </form>
+            </field>
+        </record>
+        <!-- SEARCH VIEW  -->
+        <record id="chistes_search_view" model="ir.ui.view">
+        	<field name="name">chiste.search.view</field>
+        	<field name="model">chiste.chiste</field>
+        	<field name="type">search</field>
+        	<field name="arch" type="xml">
+        		<search>
+        			<field name="title" select="1"></field>
+        		</search>  
+        	</field>      	
+        </record>    
+        <!-- TREE VIEW -->
+        <record id="chiste_tree_view" model="ir.ui.view">
+        	<field name="name">chiste.tree.view</field>
+            <field name="model">chiste.chiste</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree>            
+                    <field name="title"/>
+                </tree>
+            </field>
+        </record>
+
+
+
+        <!-- FORM VIEW ACTION-->
+        <record id="chiste_form_view_action" model="ir.actions.act_window">
+            <field name="name">Este puede ser un buen chiste</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_id" ref="chiste_form_view"/>
+            <field name="res_model">chiste.chiste</field>
+            <field name="view_type">form</field>
+        </record>
+
+        <!-- TREE VIEW ACTION-->
+        <record id="chistes_tree_view_action" model="ir.actions.act_window">
+        	<field name="name">Listado de chistes</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_id" ref="chiste_tree_view"/>
+            <field name="res_model">chiste.chiste</field>
+            <field name="view_type">tree</field>
+            <field name="search_view_id" ref="chistes_search_view"/>  
+        </record>
+
+		<menuitem id="chistes_main_menu"  name="Chistes" action="chiste_form_view_action" sequence="200"/>
+        <menuitem id="chistes_submenuA" parent="chistes_main_menu" name="Listado de chistes" action="chistes_tree_view_action"/>
+
+	</data>
+</openerp>

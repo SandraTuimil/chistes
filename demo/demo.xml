@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+	<data>
+		<record model="chiste_chiste">
+			<field name='title'>Comentarios</field>
+			<field name='description'>
+				Está nunha clase de programación un alumno que non da feito e tal... 
+				
+
+			</field>
+		</record>
+	</data>
+</openerp>
