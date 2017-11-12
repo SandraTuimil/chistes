@@ -3,14 +3,14 @@
 <openerp>
 	<data>
 		<record model="chiste.categoria">
-			<field name='title'>Programación</field>
-			<field name='description'>.. 
+			<field name='name'>Programación</field>
+			<field name='description'>.sdf . 
 			</field>
 		</record>
 
 		<record model="chiste.categoria">
-			<field name='title'>Jaimito</field>
-			<field name='description'>.. 
+			<field name='name'>Jaimito</field>
+			<field name='description'>.dfsaasd as . 
 			</field>
 		</record>
 

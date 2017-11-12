@@ -9,7 +9,7 @@ class categoria(osv.osv):
 		'description' : fields.char('Description', size=64),
 		
 	}
-
+categoria()
 
 
 

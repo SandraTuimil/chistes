@@ -15,5 +15,5 @@
     'demo_xml': ['demo/demo.xml'],
     'installable': True,
     'auto_install': False,
-    'active': True,
+    'active': False,
 }
